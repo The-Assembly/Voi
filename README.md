@@ -2,19 +2,21 @@
 
 ## Introduction to 
 
-## Install Python 3 and PIP
+## Installing the Libraries
 
-## Speech Recognition
+### Install Python 3 and PIP
 
-## Google API 
+### Speech Recognition
 
-## Selenium
+### Google API 
 
-## Aslaaudio
+### Selenium
+
+### Aslaaudio
 
 sudo -H pip3 install pyalsaaudio
 
-## Firefox browser Raspberry PI
+### Firefox browser Raspberry PI
 
 1. Install dirmngr:	<br/>	
 - sudo apt install dirmngr <br/>
@@ -28,5 +30,5 @@ sudo -H pip3 install pyalsaaudio
 - sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 9BDB3D89CE49EC21 <br/>
 - sudo apt update && sudo apt install firefox <br/>
 
-## Setting up the GPIO pins on a Raspberry PI
+### Setting up the GPIO pins on a Raspberry PI
 
