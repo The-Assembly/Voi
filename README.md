@@ -4,17 +4,21 @@
 
 ## Installing the Libraries
 
+### Nginx
+This is a light-weight webserver that runs on the raspberry PI. We will use it to serve the player.html that we will create 
+
 ### Install Python 3 and PIP
 
 ### Speech Recognition
 
-### Google API 
+### Google API
 
 ### Selenium
-
+This library enables us to open a web browser from python and simulate button clicks on hosted html pages.  
+ 
 ### Aslaaudio
-
-sudo -H pip3 install pyalsaaudio
+This library enables us to control speaker volume through python. <br/>
+- sudo -H pip3 install pyalsaaudio
 
 ### Firefox browser Raspberry PI
 
