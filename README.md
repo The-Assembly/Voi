@@ -1,7 +1,7 @@
 # Use Voice Search to make a Video Playlist
 
 ## Introduction to Today's Workshop
-![alt text](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+![Function_diagram](https://user-images.githubusercontent.com/32713072/34573888-24386cb8-f18f-11e7-8a5a-119eba047c5b.jpg)
 
 ## Installing the Libraries
 To enable the functionalities of all the different functions we will be using on python. Certain libraries need to be installed to enable us to use these "functionalities" for the further use.
