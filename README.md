@@ -1,11 +1,13 @@
 # Use Voice Search to make a Video Playlist
 
 ## Introduction to Today's Workshop
-**--provide a short overview of the workshop--**
-A Function diagram that provides an overview of the workshop is found below.
+**--provide a short overview of the workshop--**<br/>
+A Function diagram that provides an overview of the workshop is found below.<br/>
+
 ![Function_diagram](https://user-images.githubusercontent.com/32713072/34573888-24386cb8-f18f-11e7-8a5a-119eba047c5b.jpg)
 
-For the circuit diagram, use the image below as a guide.
+For the circuit diagram, use the image below as a guide.<br/>
+
 ![Circuit_diagram](https://user-images.githubusercontent.com/32713072/34574074-c46ba1aa-f18f-11e7-9c27-439b266c20e6.jpg)
 
 ## Pre-requisite
@@ -68,8 +70,9 @@ Next to server_name, where I have **[your public IP]**, plug in your public IP a
 
 Then we’ll just test this and re-load nginx.
 - sudo nginx -t
-- sudo systemctl reload nginx
-If all goes fine you will see the message below: 
+- sudo systemctl reload nginx <br/>
+
+If all goes fine you will see the message below: <br/>
 ![If_all_goes_right](https://user-images.githubusercontent.com/32713072/34576334-03bccd1e-f197-11e7-9321-3d7068a23276.PNG)
 
 Access your website by typing your public IP address into your web browser’s address bar from any internet-connected device. Your site will just have the nginx welcome page for now,  located at /var/www/html. You can remove that and create a file calledindex.html, if you  and continue from there. <br/>
@@ -90,7 +93,8 @@ There are two ways of setting the audio output.
 
 #### COMMAND LINE
 The following command, entered in the command line, will switch the audio output to HDMI:
-- amixer cset numid=3 2
+- amixer cset numid=3 2 
+
 Here the output is being set to 2, which is HDMI. Setting the output to 1 switches to analogue (headphone jack). The default setting is 0 which is automatic. 
 
 #### RASPI-CONFIG
@@ -109,6 +113,7 @@ Two options of attaching a microphone into Raspberry Pi. One is to have USB mic,
 
 1. Plug in the dongle and check the version of your sound card with lsusb:
 - lsusb
+
 Bus 001 Device 004: ID 041e:30d3 Creative Technology, Ltd Sound Blaster Play! 
 (will show your sound card here)
 
@@ -121,6 +126,7 @@ To prevent the internal sound card to appear at the top comment out line, and ch
 
 3. Enable USB audio output by default
 - sudo nano /etc/asound.conf
+
 ```python
 pcm.!default {
 
@@ -303,12 +309,12 @@ Now that you’ve got the package installed and updated, let’s take a look at 
 
 All of the following code can be added to this same file. Remember to save before you run the above command. To exit the sketch and make changes, press Ctrl+C.
 
-To add the GPIO library to a Python sketch, you must first import it:
+To add the GPIO library to a Python sketch, you must first import it: <br/>
 ```python
 import RPi.GPIO as GPIO
 ```
 
-Then we need to declare the type of numbering system we’re going to use for our pins:
+Then we need to declare the type of numbering system we’re going to use for our pins: <br/>
 ```python
 #set up GPIO using BCM numbering
 GPIO.setmode(GPIO.BCM)
@@ -316,11 +322,11 @@ GPIO.setmode(GPIO.BCM)
 GPIO.setmode(GPIO.BOARD)
 ```
 #### Examples: 
-https://thepihut.com/blogs/raspberry-pi-tutorials/27968772-turning-on-an-led-with-your-raspberry-pis-gpio-pins
+https://thepihut.com/blogs/raspberry-pi-tutorials/27968772-turning-on-an-led-with-your-raspberry-pis-gpio-pins <br/>
 https://www.raspberrypi-spy.co.uk/2012/05/install-rpi-gpio-python-library/
 
 ### Setting up the program to run on terminal, after boot
-A simple way to see how you can setup to run python file on Raspberry Pi startup.(using terminal).
+A simple way to see how you can setup to run python file on Raspberry Pi startup (using the terminal).
 
 - Save the python file on home/pi
 - On the terminal, navigate to  /home/pi
