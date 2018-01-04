@@ -15,7 +15,7 @@ For the circuit diagram, use the image below as a guide.
 To enable the functionalities of all the different functions we will be using on python. Certain libraries need to be installed to enable us to use these "functionalities" for the further use.
 
 ### Nginx
-This is a light-weight webserver that runs on the raspberry PI. We will use it to serve the player.html that we will create <br\>
+This is a light-weight webserver that runs on the raspberry PI. We will use it to serve the player.html that we will create.
 We’ll update our packages and then install nginx. Open up the terminal and run these commands, one after the other:
 
 - sudo apt-get update
@@ -28,7 +28,7 @@ We’re finally at the end of our acronym! PHP is responsible for the dynamic co
 Let’s edit a file. These are PHP’s settings, and we’re going to make it more secure.
 - sudo nano /etc/php5/fpm/php.ini
 
-Find the line that says #cgi.fix_pathinfo=1 and change it to cgi.fix_pathinfo=0. You can find it with the search function (Ctrl+W). Then exit with Ctrl+X and save with Y. <br\>
+Find the line that says #cgi.fix_pathinfo=1 and change it to cgi.fix_pathinfo=0. You can find it with the search function (Ctrl+W). Then exit with Ctrl+X and save with Y. 
 
 Then you’ll just restart PHP:
 - sudo systemctl restart php5-fpm
@@ -64,7 +64,7 @@ server {
     }
 }
 ```
-Next to server_name, where I have **[your public IP]**, plug in your public IP address (you can find this by asking Google or another search engine). <br\>
+Next to server_name, where I have **[your public IP]**, plug in your public IP address (you can find this by asking Google or another search engine). 
 
 Then we’ll just test this and re-load nginx.
 - sudo nginx -t
@@ -76,7 +76,7 @@ Access your website by typing your public IP address into your web browser’s a
 **In our case, move all the content from RPIvideoplayer to /var/www/html on your Raspberry PI**
 
 ### Install Python 3 and PIP
-Usually Python3 is pre-installed when you install Raspbian on your RAspberry PI. <br\>
+Usually Python3 is pre-installed when you install Raspbian on your Raspberry PI. 
 
 But, not all Python packages are available in the Raspbian archives, and those that are can sometimes be out-of-date. If you can't find a suitable version in the Raspbian archives, you can install packages from the Python Package Index (PyPI). To do so, use the pip tool.
 
@@ -91,26 +91,26 @@ There are two ways of setting the audio output.
 #### COMMAND LINE
 The following command, entered in the command line, will switch the audio output to HDMI:
 - amixer cset numid=3 2
-Here the output is being set to 2, which is HDMI. Setting the output to 1 switches to analogue (headphone jack). The default setting is 0 which is automatic. <br\>
+Here the output is being set to 2, which is HDMI. Setting the output to 1 switches to analogue (headphone jack). The default setting is 0 which is automatic. 
 
 #### RASPI-CONFIG
 Open up raspi-config by entering the following into the command line:
 - sudo raspi-config
 
-This will open the configuration screen:<br\>
+This will open the configuration screen:
 
-Select Option 8 Advanced Options and press Enter, then select Option A6:  Audio and press Enter.<br\>
+Select Option 8 Advanced Options and press Enter, then select Option A6:  Audio and press Enter.
 
-Now you are presented with the two modes explained above as an alternative to the default Auto option.<br\>
+Now you are presented with the two modes explained above as an alternative to the default Auto option.<br/>
 Select a mode, press Enter and press the right arrow key to exit the options list, then select Finish to exit the configuration tool.
 
 ### Setup a USB microphone
-Two options of attaching a microphone into Raspberry Pi. One is to have USB mic, another to have an external USB sound card. Regardless the choice, the following instruction will work in setting up some basic microphone setup, before doing something cool like recording music, or experimenting with voice recognition modules.<br\>
+Two options of attaching a microphone into Raspberry Pi. One is to have USB mic, another to have an external USB sound card. Regardless the choice, the following instruction will work in setting up some basic microphone setup, before doing something cool like recording music, or experimenting with voice recognition modules.<br/>
 
 1. Plug in the dongle and check the version of your sound card with lsusb:
 - lsusb
 Bus 001 Device 004: ID 041e:30d3 Creative Technology, Ltd Sound Blaster Play! 
-(will show your sound card here)<br\>
+(will show your sound card here)
 
 2. To enable USB audio output, load the sound driver:
 - sudo modprobe snd_bcm2835
@@ -154,7 +154,7 @@ card 1
 7. You may want to adjust some volumes:
 - alsamixer
 
-8. To save your settings:<br\>
+8. To save your settings:<br/>
 -sudo alsactl store
 
 ### Speech Recognition
@@ -183,14 +183,14 @@ If the version in the repositories is too old, install the latest release using 
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp; **https://pypi.python.org/pypi/SpeechRecognition/**
 
 ### Google API
-In our application we are using a library called - **gTTS (text to speech library)** <br\>
+In our application we are using a library called - **gTTS (text to speech library)** <br/>
 gTTS is a module and command line utility to save spoken text to mp3.
 It uses the Google Text to Speech (TTS) API.
 This module supports many languages and sounds very natural.
 
 #### Installation
 Install with the python package tool (pip):
-- sudo pip install gTTS <br\>
+- sudo pip install gTTS <br/>
 
 #### Example
 ```python
@@ -201,7 +201,7 @@ tts.save("good.mp3")
 os.system("mpg321 good.mp3")
 ```
 If you want to test it on the command line use:
-- gtts-cli.py “Hello” -l ‘en’ -o hello.mp3 <br\>
+- gtts-cli.py “Hello” -l ‘en’ -o hello.mp3 <br/>
 
 In addition, we are also using an inbuilt library, that come with speechrecognition library, when you install it. 
 **FOR MORE INFO: https://pythonprogramminglanguage.com/text-to-speech/
@@ -274,7 +274,7 @@ How to install Firebug:
 
 **In case Firebug is not enabled, follow the steps below** 
 
-The Firebug extension isn’t being developed or maintained any longer. So, it will be disabled by default. When you do right click and see you will not get option to inspect with firebug. Firefox DevTools is alternative of Firebug.<br\>
+The Firebug extension isn’t being developed or maintained any longer. So, it will be disabled by default. When you do right click and see you will not get option to inspect with firebug. Firefox DevTools is alternative of Firebug.<br/>
 
 Still you can use it but you need to enable it.
  
@@ -284,10 +284,10 @@ Steps to enable Firebug in Firefox:
 
 - Type **about:config** is address bar and click on  *I accept the risk*.
 
-- Search for : <br\>
-a. ‘browser.tabs.remote.autostart’ and set the value to ‘false’ <br\>
-b. ‘browser.tabs.remote.autostart.1’ (if present) and set the value to ‘false’ <br\>
-c. ‘browser.tabs.remote.autostart .2’ and set the value to ‘false’ <br\>
+- Search for : <br/>
+a. ‘browser.tabs.remote.autostart’ and set the value to ‘false’ <br/>
+b. ‘browser.tabs.remote.autostart.1’ (if present) and set the value to ‘false’ <br/>
+c. ‘browser.tabs.remote.autostart .2’ and set the value to ‘false’ <br/>
 
 - Restart the Firefox.
 
