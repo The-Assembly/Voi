@@ -124,8 +124,8 @@ To prevent the internal sound card to appear at the top comment out line, and ch
 - $sudo nano /etc/modprobe.d/alsa-base.conf
 - options snd-usb-audio index=1
 
-3. Enable USB audio output by default
-- sudo nano /etc/asound.conf
+3. Enable USB audio output by default: <br/>
+sudo nano /etc/asound.conf <br/>
 
 ```python
 pcm.!default {
@@ -148,20 +148,20 @@ card 1
 
 }
 ```
-4. Reboot now:
-- sudo reboot
+4. Reboot now:<br/>
+sudo reboot
 
-5. To record:
-- arecord -D plughw:1,0 -f cd test.wav
+5. To record:<br/>
+arecord -D plughw:1,0 -f cd test.wav
 
-6. To playback:
-- aplay test.wav
+6. To playback:<br/>
+aplay test.wav
 
-7. You may want to adjust some volumes:
-- alsamixer
+7. You may want to adjust some volumes:<br/>
+alsamixer
 
 8. To save your settings:<br/>
--sudo alsactl store
+sudo alsactl store
 
 ### Speech Recognition
 Library for performing speech recognition, with support for several engines and APIs, online and offline.
@@ -210,7 +210,7 @@ If you want to test it on the command line use:
 - gtts-cli.py “Hello” -l ‘en’ -o hello.mp3 <br/>
 
 In addition, we are also using an inbuilt library, that come with speechrecognition library, when you install it. 
-**FOR MORE INFO: https://pythonprogramminglanguage.com/text-to-speech/
+**FOR MORE INFO: https://pythonprogramminglanguage.com/text-to-speech/**
 
 ### Selenium
 Selenium is a web automation tool. A web browser can be controlled using Python code, any task you would normally do on the web can be done using the selenium module.This library enables us to open a web browser from python and simulate button clicks on hosted html pages.
@@ -305,7 +305,7 @@ If it isn’t already installed it will be installed. If it is already installed
 #### Using the RPi.GPIO Library
 Now that you’ve got the package installed and updated, let’s take a look at some of the functions that come with it. Open the Leafpad text editor and save your sketch as “myInputSketch.py”. From this point forward, we’ll execute this script using the command line:
 
--sudo python myInputSketch.py
+- sudo python myInputSketch.py
 
 All of the following code can be added to this same file. Remember to save before you run the above command. To exit the sketch and make changes, press Ctrl+C.
 
