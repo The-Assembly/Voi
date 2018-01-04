@@ -262,8 +262,8 @@ This library enables us to control speaker volume through python. <br/>
 - sudo apt update && sudo apt install firefox <br/>
 
 ### Find the X-path in Mozella Firefox (Firebug)
-Firebug is a add-on of Firefox which helps you in identifying HTML, CSS and JAVASCRIPT web elements more easily.<br\>
-Firebug integrates with Firefox to put a wealth of development tools at your fingertips while you browse. You can edit, debug, and monitor CSS, HTML, and JavaScript live in any web page.<br\>
+Firebug is a add-on of Firefox which helps you in identifying HTML, CSS and JAVASCRIPT web elements more easily.<br/>
+Firebug integrates with Firefox to put a wealth of development tools at your fingertips while you browse. You can edit, debug, and monitor CSS, HTML, and JavaScript live in any web page.<br/>
 How to install Firebug:
 - Launch Firefox browser.
 - Type about:addons in address and hit **Enter**.
