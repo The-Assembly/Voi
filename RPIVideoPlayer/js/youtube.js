@@ -54,7 +54,8 @@ function onYouTubeIframeAPIReady()
             theme: "dark",
             color: "white",
             showinfo: 1,
-            playsinline: 1
+            playsinline: 1,
+	    origin: "https://www.youtube.com"
         }
     })
 }
@@ -131,11 +132,12 @@ function multiSearch() {
         var searchTerm = $.getQuery('searchTerm');
 
         $.getJSON(
-            'http://ws.audioscrobbler.com/2.0/?method=track.search&track='+searchTerm +'&autocorrect=1&api_key=946a0b231980d52f90b8a31e15bccb16&limit=20&format=json',
+            'http://ws.audioscrobbler.com/2.0/?method=artist.gettoptracks&artist='+searchTerm +'&autocorrect=1&api_key=946a0b231980d52f90b8a31e15bccb16&limit=20&format=json',
             function(data)
             {
-                $.each( data.results.trackmatches.track, function(i,item) {
-                    player.listArray.push(item.artist + ' - ' + item.name);                        
+				var artistName = data.toptracks['@attr'].artist
+                $.each( data.toptracks.track, function(i,item) {
+                    player.listArray.push(artistName + ' - ' + item.name);                        
                 });
 
                 var x = 0;
