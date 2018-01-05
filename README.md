@@ -4,10 +4,7 @@
 OBJECTIVE: Create a voice controlled YouTube playlist generator app that runs on a Raspberry Pi.  
 
 The user inputs artist name or keywords using the microphone; the app searches for and retrieves songs based on this criteria and then queues them for instant playback as an fully navigable, embedded YouTube playlist on a web page.
-
 <br/>
-A Function diagram that provides an overview of the workshop is found below.<br/>
-
 ![Function_diagram](https://user-images.githubusercontent.com/32713072/34607292-64ff54e4-f22c-11e7-9ab5-cf19736566d1.jpg)
 
 For the circuit diagram, use the image below as a guide.<br/>
