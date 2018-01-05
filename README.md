@@ -73,7 +73,7 @@ If all goes fine you will see the message below: <br/>
 ![If_all_goes_right](https://user-images.githubusercontent.com/32713072/34576334-03bccd1e-f197-11e7-9321-3d7068a23276.PNG)
 
 Access your website by typing your public IP address into your web browser’s address bar from any internet-connected device. Your site will just have the nginx welcome page for now,  located at /var/www/html. You can remove that and create a file calledindex.html, if you  and continue from there. <br/>
-**In our case, move all the content from RPIvideoplayer to /var/www/html on your Raspberry PI**
+**In our case, move all the content from RPIvideoplayer folder to /var/www/html on your Raspberry PI**
 
 ### Install Python 3 and PIP
 Usually Python3 is pre-installed when you install Raspbian on your Raspberry PI. 
