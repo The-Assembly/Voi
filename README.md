@@ -8,10 +8,7 @@ A Function diagram that provides an overview of the workshop is found below.<br/
 
 For the circuit diagram, use the image below as a guide.<br/>
 
-![Circuit_diagram](https://user-images.githubusercontent.com/32713072/34574074-c46ba1aa-f18f-11e7-9c27-439b266c20e6.jpg)
-
-## Pre-requisite
-**--if login required --**  
+![Circuit_diagram](https://user-images.githubusercontent.com/32713072/34574074-c46ba1aa-f18f-11e7-9c27-439b266c20e6.jpg) 
 
 ## Installing the Libraries
 To enable the functionalities of all the different functions we will be using on python. Certain libraries need to be installed to enable us to use these "functionalities" for the further use.
