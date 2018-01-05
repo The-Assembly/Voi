@@ -4,7 +4,7 @@
 **--provide a short overview of the workshop--**<br/>
 A Function diagram that provides an overview of the workshop is found below.<br/>
 
-![Function_diagram](https://user-images.githubusercontent.com/32713072/34573888-24386cb8-f18f-11e7-8a5a-119eba047c5b.jpg)
+![Function_diagram](https://user-images.githubusercontent.com/32713072/34607292-64ff54e4-f22c-11e7-9ab5-cf19736566d1.jpg)
 
 For the circuit diagram, use the image below as a guide.<br/>
 
